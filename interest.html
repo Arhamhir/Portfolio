@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+    <header>
+        <div class="nav">
+            <a href="/Portfolio/" id="home-link" class="tags">Home</a>
+            <a href="/Portfolio/project" id="project-link" class="tags">Projects</a>
+            <a href="/Portfolio/interest" id="interest-link" class="tags">Interests</a>
+            <a href="/Portfolio/socials" id="socials-link" class="tags">Socials</a>
+        </div>
+    </header>
+    <main>
+        <div id="progress"></div>
+        <div id="scroll"></div>
+        <div class="i-contain">
+            <div class="i-containers">
+                <img src="aeroplane.png" alt="me jahaaz" class="i-img">
+                <div class="i-content">
+                    <h1 class="m-heading i-head">Travelling</h1>
+                    I have a deep passion for traveling. Exploring new places and experiencing different cultures not
+                    only fuels my curiosity but also enriches my perspective on life.
+                </div>
+            </div>
+            <div class="i-containers">
+                <div class="i-content">
+                    <h1 class="m-heading i-head">Coding</h1>
+                    I love to code because it allows me to solve complex problems, create innovative solutions, and
+                    continuously learn and grow in the ever-evolving world of technology
+                </div>
+                <img src="code.png" alt="me jahaaz" class="i-img">
+            </div>
+            <div class="i-containers">
+                <img src="football.png" alt="me jahaaz" class="i-img">
+                <div class="i-content">
+                    <h1 class="m-heading i-head">Football</h1>
+                    I have a passion for football because it combines the thrill of competition, the joy of teamwork,
+                    and the satisfaction of pushing my physical limits
+                </div>
+            </div>
+            <div class="i-containers">
+                <div class="i-content">
+                    <h1 class="m-heading i-head">Gaming</h1>
+                    For me, gaming is more than a hobby; it’s a way to experience amazing adventures, test my skills,
+                    and build lasting friendships.
+                </div>
+                <img src="pc.png" alt="me jahaaz" class="i-img">
+            </div>
+            <div class="i-containers">
+                <img src="bike.png" alt="me jahaaz" class="i-img">
+                <div class="i-content">
+                    <h1 class="m-heading i-head">Biking</h1>
+                    I’m really into biking because it’s fun to zip around, explore new trails, and see how far I can
+                    push myself.
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <script>
+        let pb = document.getElementById('progress');
+        let th = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let ph = (window.pageYOffset / th) * 100;
+            pb.style.height = ph + "%";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
